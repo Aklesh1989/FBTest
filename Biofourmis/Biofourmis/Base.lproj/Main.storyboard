@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOf-UE-Rvp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--  -->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ServeyListVC" customModule="Biofourmis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70c-Ar-Ulv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="wpb-aB-bR9">
+                                    <size key="itemSize" width="20" height="120"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lS5-mO-dmR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sKQ-hj-eYK"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.51372549020000002" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="70c-Ar-Ulv" secondAttribute="trailing" id="cOS-yb-F1N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="70c-Ar-Ulv" secondAttribute="bottom" id="jPf-yP-FFw"/>
+                            <constraint firstItem="70c-Ar-Ulv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nFg-JX-ohy"/>
+                            <constraint firstItem="70c-Ar-Ulv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vtR-x5-eas"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="  " id="g0Z-OL-doS" customClass="BFNavigationItems" customModule="Biofourmis" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="collectionViewServey" destination="70c-Ar-Ulv" id="MEM-kw-Zw4"/>
+                        <segue destination="jis-Ef-HM1" kind="show" identifier="DashBoardToHealthList" id="H9z-zw-xZ8"/>
+                        <segue destination="U38-bc-oTE" kind="show" identifier="DashBoardToMedicareServicesList" id="jqk-tW-k3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Health ListVC-->
+        <scene sceneID="laq-XH-AF4">
+            <objects>
+                <viewController storyboardIdentifier="HealthListVC" id="jis-Ef-HM1" customClass="HealthListVC" customModule="Biofourmis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Vc-MZ-zI0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-ae-k4e">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelthListCell" rowHeight="107" id="DHU-DL-bRE" customClass="HelthListCell" customModule="Biofourmis" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DHU-DL-bRE" id="N8l-r1-ZFX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Percent of Physicians that have Adopted Any EHR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZp-zv-2go">
+                                                    <rect key="frame" x="10" y="38" width="340" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period:2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7F-g2-pAh">
+                                                    <rect key="frame" x="318" y="10" width="86" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QS4-i0-yEY">
+                                                    <rect key="frame" x="367.5" y="38" width="36.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Percent of Physicians that have Adopted a Certified EHR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azz-Yr-rbg">
+                                                    <rect key="frame" x="10" y="61" width="293" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djN-6a-xZ5">
+                                                    <rect key="frame" x="367.5" y="70" width="36.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l7F-g2-pAh" firstAttribute="top" secondItem="N8l-r1-ZFX" secondAttribute="top" constant="10" id="5wq-5t-BeC"/>
+                                                <constraint firstItem="QS4-i0-yEY" firstAttribute="centerY" secondItem="OZp-zv-2go" secondAttribute="centerY" id="6RV-M7-Yg0"/>
+                                                <constraint firstAttribute="trailing" secondItem="QS4-i0-yEY" secondAttribute="trailing" constant="10" id="6z2-eg-MY9"/>
+                                                <constraint firstItem="QS4-i0-yEY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OZp-zv-2go" secondAttribute="trailing" constant="10" id="8sD-vR-SZX"/>
+                                                <constraint firstItem="OZp-zv-2go" firstAttribute="top" secondItem="l7F-g2-pAh" secondAttribute="bottom" constant="10" id="Hgb-OD-cRM"/>
+                                                <constraint firstAttribute="trailing" secondItem="l7F-g2-pAh" secondAttribute="trailing" constant="10" id="MNv-H5-BEX"/>
+                                                <constraint firstAttribute="trailing" secondItem="djN-6a-xZ5" secondAttribute="trailing" constant="10" id="MVz-6J-qgH"/>
+                                                <constraint firstItem="OZp-zv-2go" firstAttribute="leading" secondItem="N8l-r1-ZFX" secondAttribute="leading" constant="10" id="TWu-EH-mvj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Azz-Yr-rbg" secondAttribute="bottom" constant="10" id="YeD-dK-qAH"/>
+                                                <constraint firstItem="Azz-Yr-rbg" firstAttribute="top" secondItem="OZp-zv-2go" secondAttribute="bottom" constant="5" id="dpX-yO-3Nv"/>
+                                                <constraint firstItem="Azz-Yr-rbg" firstAttribute="leading" secondItem="OZp-zv-2go" secondAttribute="leading" id="gVH-tl-Etp"/>
+                                                <constraint firstItem="djN-6a-xZ5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Azz-Yr-rbg" secondAttribute="trailing" constant="10" id="jrP-pU-anW"/>
+                                                <constraint firstItem="djN-6a-xZ5" firstAttribute="centerY" secondItem="Azz-Yr-rbg" secondAttribute="centerY" id="zcE-NC-4og"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblAnyEHR" destination="QS4-i0-yEY" id="Fbz-xP-7D1"/>
+                                            <outlet property="lblCertifiedEHR" destination="djN-6a-xZ5" id="XTe-Cl-9uV"/>
+                                            <outlet property="lblPeriod" destination="l7F-g2-pAh" id="bF5-jM-ce5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jis-Ef-HM1" id="Teu-VD-N8y"/>
+                                    <outlet property="delegate" destination="jis-Ef-HM1" id="sh5-x4-y9J"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.51372549020000002" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1zf-ae-k4e" firstAttribute="top" secondItem="n7U-jr-Zcw" secondAttribute="top" id="8Vs-7K-hs4"/>
+                            <constraint firstItem="1zf-ae-k4e" firstAttribute="leading" secondItem="n7U-jr-Zcw" secondAttribute="leading" id="HIW-vy-Xzy"/>
+                            <constraint firstItem="n7U-jr-Zcw" firstAttribute="bottom" secondItem="1zf-ae-k4e" secondAttribute="bottom" id="RKG-zn-p4J"/>
+                            <constraint firstItem="n7U-jr-Zcw" firstAttribute="trailing" secondItem="1zf-ae-k4e" secondAttribute="trailing" id="iWp-Qd-iDD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n7U-jr-Zcw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vZG-qi-oX6" customClass="BFNavigationItems" customModule="Biofourmis" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="tblHealthList" destination="1zf-ae-k4e" id="8un-Ab-XIC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ao-4x-XZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="113"/>
+        </scene>
+        <!--Medicare And Medicaid Services List-->
+        <scene sceneID="WsG-2s-tHG">
+            <objects>
+                <viewController storyboardIdentifier="MedicareAndMedicaidServicesList" id="U38-bc-oTE" customClass="MedicareAndMedicaidServicesList" customModule="Biofourmis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tWF-X6-i4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-B6-dI7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelthListCell" rowHeight="130" id="2HE-QH-5g2" customClass="HelthListCell" customModule="Biofourmis" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2HE-QH-5g2" id="ddS-Uh-TGM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHn-C4-hy0">
+                                                    <rect key="frame" x="10" y="38" width="58" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period:2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kf-kz-cKS">
+                                                    <rect key="frame" x="10" y="10" width="86" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5A-bx-tTu">
+                                                    <rect key="frame" x="68" y="38" width="38" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOt-y2-yke">
+                                                    <rect key="frame" x="10" y="66" width="347.5" height="54"/>
+                                                    <string key="text">Percentage of Physicians, Physician Assistants, and Nurse Practitioners that have Demonstrated Meaningful Use of CEHRT and or AIU any EHR </string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKl-69-l3o">
+                                                    <rect key="frame" x="367.5" y="84" width="36.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pOt-y2-yke" firstAttribute="leading" secondItem="YHn-C4-hy0" secondAttribute="leading" id="0ia-Xl-ANK"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZKl-69-l3o" secondAttribute="trailing" constant="10" id="1SS-LY-jwd"/>
+                                                <constraint firstItem="d5A-bx-tTu" firstAttribute="leading" secondItem="YHn-C4-hy0" secondAttribute="trailing" id="68g-Uf-LKa"/>
+                                                <constraint firstItem="YHn-C4-hy0" firstAttribute="leading" secondItem="ddS-Uh-TGM" secondAttribute="leading" constant="10" id="DgL-jY-pwm"/>
+                                                <constraint firstItem="d5A-bx-tTu" firstAttribute="centerY" secondItem="YHn-C4-hy0" secondAttribute="centerY" id="Ekt-Z1-oF8"/>
+                                                <constraint firstItem="pOt-y2-yke" firstAttribute="top" secondItem="YHn-C4-hy0" secondAttribute="bottom" constant="10" id="Lc8-T4-7MU"/>
+                                                <constraint firstAttribute="bottom" secondItem="pOt-y2-yke" secondAttribute="bottom" constant="10" id="Mb3-Me-KVy"/>
+                                                <constraint firstItem="YHn-C4-hy0" firstAttribute="top" secondItem="6kf-kz-cKS" secondAttribute="bottom" constant="10" id="TBs-4b-ZwY"/>
+                                                <constraint firstItem="ZKl-69-l3o" firstAttribute="centerY" secondItem="pOt-y2-yke" secondAttribute="centerY" id="VUY-QS-b9p"/>
+                                                <constraint firstItem="6kf-kz-cKS" firstAttribute="top" secondItem="ddS-Uh-TGM" secondAttribute="top" constant="10" id="WNe-IH-j0Y"/>
+                                                <constraint firstItem="ZKl-69-l3o" firstAttribute="leading" secondItem="pOt-y2-yke" secondAttribute="trailing" constant="10" id="b0J-UA-hD1"/>
+                                                <constraint firstItem="6kf-kz-cKS" firstAttribute="leading" secondItem="ddS-Uh-TGM" secondAttribute="leading" constant="10" id="p8b-Yr-xWB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblAnyEHR" destination="d5A-bx-tTu" id="4zj-wJ-uBm"/>
+                                            <outlet property="lblCertifiedEHR" destination="ZKl-69-l3o" id="IbO-yD-jl0"/>
+                                            <outlet property="lblPeriod" destination="6kf-kz-cKS" id="dx3-0u-rNI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="U38-bc-oTE" id="Pdt-mJ-7Od"/>
+                                    <outlet property="delegate" destination="U38-bc-oTE" id="mL3-JG-VOg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.51372549020000002" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nga-B6-dI7" firstAttribute="top" secondItem="KlI-19-1zG" secondAttribute="top" id="7PB-Fu-WOR"/>
+                            <constraint firstItem="KlI-19-1zG" firstAttribute="trailing" secondItem="Nga-B6-dI7" secondAttribute="trailing" id="97u-PI-NO5"/>
+                            <constraint firstItem="KlI-19-1zG" firstAttribute="bottom" secondItem="Nga-B6-dI7" secondAttribute="bottom" id="GgG-Hp-AUp"/>
+                            <constraint firstItem="Nga-B6-dI7" firstAttribute="leading" secondItem="KlI-19-1zG" secondAttribute="leading" id="Kld-2c-reM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KlI-19-1zG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="joL-Y7-NEg" customClass="BFNavigationItems" customModule="Biofourmis" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="tblCenterList" destination="Nga-B6-dI7" id="lY7-CK-JHx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZ1-Zz-sic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="21"/>
+        </scene>
+        <!--NavigationVC-->
+        <scene sceneID="x6B-0X-XTc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UOf-UE-Rvp" customClass="BFNavigationVC" customModule="Biofourmis" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" shadowImage="navigationShadow" id="WlC-bG-2pG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.12549019607843137" green="0.51372549019607838" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hEb-9L-O91"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="El1-q3-yHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigationShadow" width="1000" height="1"/>
+    </resources>
+</document>

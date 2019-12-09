@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12112B66239BB9EE0064845E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B65239BB9EE0064845E /* AppDelegate.swift */; };
+		12112B6A239BB9EE0064845E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B69239BB9EE0064845E /* ViewController.swift */; };
+		12112B6D239BB9EE0064845E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12112B6B239BB9EE0064845E /* Main.storyboard */; };
+		12112B6F239BB9F00064845E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12112B6E239BB9F00064845E /* Assets.xcassets */; };
+		12112B72239BB9F00064845E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12112B70239BB9F00064845E /* LaunchScreen.storyboard */; };
+		12112B7D239BB9F10064845E /* BiofourmisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B7C239BB9F10064845E /* BiofourmisTests.swift */; };
+		12112B8E239BBABC0064845E /* BFNavigationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B8D239BBABC0064845E /* BFNavigationItems.swift */; };
+		12112B90239BBCFB0064845E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B8F239BBCFB0064845E /* Constant.swift */; };
+		12112B92239D04E70064845E /* WebCallsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B91239D04E70064845E /* WebCallsHelper.swift */; };
+		12112B94239D05480064845E /* BFNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B93239D05480064845E /* BFNavigationVC.swift */; };
+		12112B96239D05E80064845E /* HealthListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B95239D05E80064845E /* HealthListVC.swift */; };
+		12112B98239D0A590064845E /* HealthObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B97239D0A590064845E /* HealthObject.swift */; };
+		12112B9A239D15840064845E /* ServeyListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B99239D15840064845E /* ServeyListVC.swift */; };
+		12112B9C239D167E0064845E /* ServayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B9B239D167E0064845E /* ServayCollectionViewCell.swift */; };
+		12112B9E239D168E0064845E /* ServayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12112B9D239D168E0064845E /* ServayCollectionViewCell.xib */; };
+		12112BA0239D1A970064845E /* Servey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112B9F239D1A970064845E /* Servey.swift */; };
+		12112BA2239D75F50064845E /* HelthListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112BA1239D75F50064845E /* HelthListCell.swift */; };
+		12112BA4239D779B0064845E /* ParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112BA3239D779B0064845E /* ParentVC.swift */; };
+		12112BA6239D77C20064845E /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112BA5239D77C20064845E /* SpinnerViewController.swift */; };
+		12112BA8239D82EA0064845E /* MedicareAndMedicaidServicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112BA7239D82EA0064845E /* MedicareAndMedicaidServicesList.swift */; };
+		12112BAA239D833B0064845E /* MedicareCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12112BA9239D833B0064845E /* MedicareCenter.swift */; };
+		1240EFBE239E3B6F00353726 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1240EFBD239E3B6E00353726 /* README.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12112B79239BB9F10064845E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12112B5A239BB9EE0064845E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12112B61239BB9EE0064845E;
+			remoteInfo = Biofourmis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12112B62239BB9EE0064845E /* Biofourmis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biofourmis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12112B65239BB9EE0064845E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12112B69239BB9EE0064845E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12112B6C239BB9EE0064845E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12112B6E239BB9F00064845E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12112B71239BB9F00064845E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12112B73239BB9F00064845E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12112B78239BB9F10064845E /* BiofourmisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiofourmisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12112B7C239BB9F10064845E /* BiofourmisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiofourmisTests.swift; sourceTree = "<group>"; };
+		12112B7E239BB9F10064845E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12112B8D239BBABC0064845E /* BFNavigationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFNavigationItems.swift; sourceTree = "<group>"; };
+		12112B8F239BBCFB0064845E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		12112B91239D04E70064845E /* WebCallsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCallsHelper.swift; sourceTree = "<group>"; };
+		12112B93239D05480064845E /* BFNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFNavigationVC.swift; sourceTree = "<group>"; };
+		12112B95239D05E80064845E /* HealthListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthListVC.swift; sourceTree = "<group>"; };
+		12112B97239D0A590064845E /* HealthObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthObject.swift; sourceTree = "<group>"; };
+		12112B99239D15840064845E /* ServeyListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeyListVC.swift; sourceTree = "<group>"; };
+		12112B9B239D167E0064845E /* ServayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServayCollectionViewCell.swift; sourceTree = "<group>"; };
+		12112B9D239D168E0064845E /* ServayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServayCollectionViewCell.xib; sourceTree = "<group>"; };
+		12112B9F239D1A970064845E /* Servey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servey.swift; sourceTree = "<group>"; };
+		12112BA1239D75F50064845E /* HelthListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelthListCell.swift; sourceTree = "<group>"; };
+		12112BA3239D779B0064845E /* ParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVC.swift; sourceTree = "<group>"; };
+		12112BA5239D77C20064845E /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		12112BA7239D82EA0064845E /* MedicareAndMedicaidServicesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicareAndMedicaidServicesList.swift; sourceTree = "<group>"; };
+		12112BA9239D833B0064845E /* MedicareCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicareCenter.swift; sourceTree = "<group>"; };
+		1240EFBD239E3B6E00353726 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12112B5F239BB9EE0064845E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12112B75239BB9F10064845E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12112B59239BB9EE0064845E = {
+			isa = PBXGroup;
+			children = (
+				12112B64239BB9EE0064845E /* Biofourmis */,
+				12112B7B239BB9F10064845E /* BiofourmisTests */,
+				12112B63239BB9EE0064845E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12112B63239BB9EE0064845E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12112B62239BB9EE0064845E /* Biofourmis.app */,
+				12112B78239BB9F10064845E /* BiofourmisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12112B64239BB9EE0064845E /* Biofourmis */ = {
+			isa = PBXGroup;
+			children = (
+				12112B8C239BBA630064845E /* NavigationHelper */,
+				12112B8B239BBA5B0064845E /* Global */,
+				12112B8A239BBA520064845E /* Resources */,
+				12112B89239BBA150064845E /* Views */,
+				12112B88239BBA060064845E /* Models */,
+				12112B87239BB9F70064845E /* Controllers */,
+				12112B65239BB9EE0064845E /* AppDelegate.swift */,
+				12112B69239BB9EE0064845E /* ViewController.swift */,
+				12112B6B239BB9EE0064845E /* Main.storyboard */,
+				1240EFBD239E3B6E00353726 /* README.rtf */,
+				12112B6E239BB9F00064845E /* Assets.xcassets */,
+				12112B70239BB9F00064845E /* LaunchScreen.storyboard */,
+				12112B73239BB9F00064845E /* Info.plist */,
+			);
+			path = Biofourmis;
+			sourceTree = "<group>";
+		};
+		12112B7B239BB9F10064845E /* BiofourmisTests */ = {
+			isa = PBXGroup;
+			children = (
+				12112B7C239BB9F10064845E /* BiofourmisTests.swift */,
+				12112B7E239BB9F10064845E /* Info.plist */,
+			);
+			path = BiofourmisTests;
+			sourceTree = "<group>";
+		};
+		12112B87239BB9F70064845E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12112B95239D05E80064845E /* HealthListVC.swift */,
+				12112B99239D15840064845E /* ServeyListVC.swift */,
+				12112BA7239D82EA0064845E /* MedicareAndMedicaidServicesList.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		12112B88239BBA060064845E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12112B97239D0A590064845E /* HealthObject.swift */,
+				12112B9F239D1A970064845E /* Servey.swift */,
+				12112BA9239D833B0064845E /* MedicareCenter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12112B89239BBA150064845E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12112B9B239D167E0064845E /* ServayCollectionViewCell.swift */,
+				12112B9D239D168E0064845E /* ServayCollectionViewCell.xib */,
+				12112BA1239D75F50064845E /* HelthListCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12112B8A239BBA520064845E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		12112B8B239BBA5B0064845E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				12112B8F239BBCFB0064845E /* Constant.swift */,
+				12112B91239D04E70064845E /* WebCallsHelper.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		12112B8C239BBA630064845E /* NavigationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				12112B8D239BBABC0064845E /* BFNavigationItems.swift */,
+				12112B93239D05480064845E /* BFNavigationVC.swift */,
+				12112BA3239D779B0064845E /* ParentVC.swift */,
+				12112BA5239D77C20064845E /* SpinnerViewController.swift */,
+			);
+			path = NavigationHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12112B61239BB9EE0064845E /* Biofourmis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12112B81239BB9F10064845E /* Build configuration list for PBXNativeTarget "Biofourmis" */;
+			buildPhases = (
+				12112B5E239BB9EE0064845E /* Sources */,
+				12112B5F239BB9EE0064845E /* Frameworks */,
+				12112B60239BB9EE0064845E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Biofourmis;
+			productName = Biofourmis;
+			productReference = 12112B62239BB9EE0064845E /* Biofourmis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12112B77239BB9F10064845E /* BiofourmisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12112B84239BB9F10064845E /* Build configuration list for PBXNativeTarget "BiofourmisTests" */;
+			buildPhases = (
+				12112B74239BB9F10064845E /* Sources */,
+				12112B75239BB9F10064845E /* Frameworks */,
+				12112B76239BB9F10064845E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12112B7A239BB9F10064845E /* PBXTargetDependency */,
+			);
+			name = BiofourmisTests;
+			productName = BiofourmisTests;
+			productReference = 12112B78239BB9F10064845E /* BiofourmisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12112B5A239BB9EE0064845E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					12112B61239BB9EE0064845E = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					12112B77239BB9F10064845E = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 12112B61239BB9EE0064845E;
+					};
+				};
+			};
+			buildConfigurationList = 12112B5D239BB9EE0064845E /* Build configuration list for PBXProject "Biofourmis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12112B59239BB9EE0064845E;
+			productRefGroup = 12112B63239BB9EE0064845E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12112B61239BB9EE0064845E /* Biofourmis */,
+				12112B77239BB9F10064845E /* BiofourmisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12112B60239BB9EE0064845E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12112B9E239D168E0064845E /* ServayCollectionViewCell.xib in Resources */,
+				12112B72239BB9F00064845E /* LaunchScreen.storyboard in Resources */,
+				12112B6F239BB9F00064845E /* Assets.xcassets in Resources */,
+				12112B6D239BB9EE0064845E /* Main.storyboard in Resources */,
+				1240EFBE239E3B6F00353726 /* README.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12112B76239BB9F10064845E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12112B5E239BB9EE0064845E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12112B9A239D15840064845E /* ServeyListVC.swift in Sources */,
+				12112BA0239D1A970064845E /* Servey.swift in Sources */,
+				12112B8E239BBABC0064845E /* BFNavigationItems.swift in Sources */,
+				12112B6A239BB9EE0064845E /* ViewController.swift in Sources */,
+				12112BA6239D77C20064845E /* SpinnerViewController.swift in Sources */,
+				12112B92239D04E70064845E /* WebCallsHelper.swift in Sources */,
+				12112B90239BBCFB0064845E /* Constant.swift in Sources */,
+				12112B66239BB9EE0064845E /* AppDelegate.swift in Sources */,
+				12112B9C239D167E0064845E /* ServayCollectionViewCell.swift in Sources */,
+				12112B94239D05480064845E /* BFNavigationVC.swift in Sources */,
+				12112B96239D05E80064845E /* HealthListVC.swift in Sources */,
+				12112BA4239D779B0064845E /* ParentVC.swift in Sources */,
+				12112BA8239D82EA0064845E /* MedicareAndMedicaidServicesList.swift in Sources */,
+				12112BAA239D833B0064845E /* MedicareCenter.swift in Sources */,
+				12112B98239D0A590064845E /* HealthObject.swift in Sources */,
+				12112BA2239D75F50064845E /* HelthListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12112B74239BB9F10064845E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12112B7D239BB9F10064845E /* BiofourmisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12112B7A239BB9F10064845E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12112B61239BB9EE0064845E /* Biofourmis */;
+			targetProxy = 12112B79239BB9F10064845E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12112B6B239BB9EE0064845E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12112B6C239BB9EE0064845E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12112B70239BB9F00064845E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12112B71239BB9F00064845E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12112B7F239BB9F10064845E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12112B80239BB9F10064845E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12112B82239BB9F10064845E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Biofourmis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Biofourmis.Biofourmis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12112B83239BB9F10064845E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Biofourmis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Biofourmis.Biofourmis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12112B85239BB9F10064845E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiofourmisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Biofourmis.BiofourmisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biofourmis.app/Biofourmis";
+			};
+			name = Debug;
+		};
+		12112B86239BB9F10064845E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BiofourmisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Biofourmis.BiofourmisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biofourmis.app/Biofourmis";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12112B5D239BB9EE0064845E /* Build configuration list for PBXProject "Biofourmis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12112B7F239BB9F10064845E /* Debug */,
+				12112B80239BB9F10064845E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12112B81239BB9F10064845E /* Build configuration list for PBXNativeTarget "Biofourmis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12112B82239BB9F10064845E /* Debug */,
+				12112B83239BB9F10064845E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12112B84239BB9F10064845E /* Build configuration list for PBXNativeTarget "BiofourmisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12112B85239BB9F10064845E /* Debug */,
+				12112B86239BB9F10064845E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12112B5A239BB9EE0064845E /* Project object */;
+}
